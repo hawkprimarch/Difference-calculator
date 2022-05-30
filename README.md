@@ -2,11 +2,11 @@
 [![Actions Status](https://github.com/hawkprimarch/frontend-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/hawkprimarch/frontend-project-lvl2/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 
-`- Склонируйте репозиторий проекта локально.`
+1. Склонируйте репозиторий проекта локально.
 
-`- Выполните установку зависимостей (make install).`
+2. Выполните установку зависимостей (make install).
 
-`- Запустите сравнение файлов (команды в описании).`
+3. Запустите сравнение файлов (команды в описании).
 
 #### Описание
 

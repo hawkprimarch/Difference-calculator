@@ -1,0 +1,27 @@
+jobs:
+
+  make-lint:
+
+    name: Runs super-linter
+
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Dependencies
+        run: make install
+ 
+      - name: Run super-linter
+        run: make lint
+      - name: Run jest
+        run: make test
+      - name: Test & publish code coverage
+
+        uses: paambaati/codeclimate-action@v2.7.4
+        env:
+          CC_TEST_REPORTER_ID: ${{ secrets.CODE_CLIMATE }}
+        with:
+          coverageCommand: make test-coverage
+          debug: true
