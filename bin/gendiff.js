@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import { Command } from '../node_modules/commander.js/esm.mjs';
-import { getObjectFromPath, getDiff } from '../src/getDiff.js';
+import { Command } from 'commander/esm.mjs';
+import { getObjectFromPath, getDiff, printAnswer } from '../src/getDiff.js';
 
 const program = new Command();
 program
@@ -10,7 +10,8 @@ program
   .action((filepath1, filepath2) => {
     const obj1 = getObjectFromPath(filepath1);
     const obj2 = getObjectFromPath(filepath2);
-    console.log(getDiff(obj1, obj2));
+    const massOfDiff = getDiff(obj1, obj2);
+    printAnswer(massOfDiff);
   })
   .helpOption('-h, --help', 'output usage information')
   .option('-f, --format <type>', 'output format');

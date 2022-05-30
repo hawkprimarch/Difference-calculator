@@ -15,24 +15,38 @@ const getDiff = (obj1, obj2) => {
     const valueOfObj2 = obj2[key];
     if (_.has(obj1, key) && _.has(obj2, key)) {
       if (valueOfObj1 === valueOfObj2) {
-        acc.push(`      ${key}: ${valueOfObj1}`);
+        acc.push({ name: key, fixed: valueOfObj1 });
       } else {
-        acc.push(`    - ${key}: ${valueOfObj1}`);
-        acc.push(`    + ${key}: ${valueOfObj2}`);
+        acc.push({ name: key, oldValue: valueOfObj1, newValue: valueOfObj2 });
       }
     }
     if (_.has(obj1, key) && !_.has(obj2, key)) {
-      acc.push(`    - ${key}: ${valueOfObj1}`);
+      acc.push({ name: key, oldValue: valueOfObj1 });
     }
     if (!_.has(obj1, key) && _.has(obj2, key)) {
-      acc.push(`    + ${key}: ${valueOfObj2}`);
+      acc.push({ name: key, newValue: valueOfObj2 });
     }
     return acc;
   };
   const result = allKeys.reduce(cb, []);
-  const innerValue = result.join('\n');
-  const parts = `{\n${innerValue}\n}`;
-  return parts;
+  return result;
 };
 
-export { getObjectFromPath, getDiff };
+const printAnswer = (objOfDiff) => {
+  const cb = (acc, key) => {
+    if (_.has(key, 'fixed')) {
+      acc.push(`   ${key.name}: ${key.fixed}`);
+    }
+    if ((_.has(key, 'oldValue'))) {
+      acc.push(` - ${key.name}: ${key.oldValue}`);
+    }
+    if ((_.has(key, 'newValue'))) {
+      acc.push(` + ${key.name}: ${key.newValue}`);
+    }
+    return acc;
+  };
+  const answer = objOfDiff.reduce(cb, []);
+  console.log(`{\n${answer.join('\n')}\n}`);
+};
+
+export { getObjectFromPath, getDiff, printAnswer };
