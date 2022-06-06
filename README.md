@@ -14,10 +14,10 @@
 Вычислить различия можно с помощью команды: `gendiff [options] pathToFile1 pathToFile2`
 
 #### Options: 
-`-V, --version output the version number `
+-V, --version output the version number 
 
-`-f, --format [type] Output format `
+-f, --format [type] Output format 
 
-`-h, --help output usage information`
+-h, --help output usage information
 
 [![asciicast](https://asciinema.org/a/0zqia4A4dql68KnaTBwYml7IZ.svg)](https://asciinema.org/a/0zqia4A4dql68KnaTBwYml7IZ)

@@ -1,7 +1,7 @@
 import { fileURLToPath } from 'url';
 import * as path from 'path';
 import { dirname } from 'path';
-import { getObjectFromPath, getDiff } from '../src/getDiff.js';
+import { getNormalizePath, getDiff } from '../src/getDiff.js';
 
 const trullyMass = [
   { name: 'follow', oldValue: false },
@@ -17,7 +17,7 @@ const __dirname = dirname(__filename);
 const getFixture = (filename) => path.join(__dirname, '..', '__fixtures__', filename);
 
 test('getDiff', () => {
-  const obj1 = getObjectFromPath(getFixture('filepath1.json'));
-  const obj2 = getObjectFromPath(getFixture('filepath2.json'));
+  const obj1 = getNormalizePath(getFixture('filepath1.json'));
+  const obj2 = getNormalizePath(getFixture('filepath2.json'));
   expect(getDiff(obj1, obj2)).toEqual(trullyMass);
 });
