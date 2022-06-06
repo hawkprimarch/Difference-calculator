@@ -1,5 +1,5 @@
 ### Hexlet tests and linter status:
-![alt text](https://i.ibb.co/9nVgX0N/Difference-calculator-picture.png)
+![alt text](https://i.ibb.co/m6LN1Nz/Difference-calculator-picture.png)
 
 [![Actions Status](https://github.com/hawkprimarch/frontend-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/hawkprimarch/frontend-project-lvl2/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability) 
