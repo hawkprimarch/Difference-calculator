@@ -2,7 +2,7 @@
 ![alt text](https://i.ibb.co/m6LN1Nz/Difference-calculator-picture.png)
 
 [![Actions Status](https://github.com/hawkprimarch/frontend-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/hawkprimarch/frontend-project-lvl2/actions)
-[![Linter-check](https://github.com/hawkprimarch/frontend-project-lvl2/actions/workflows/node.js.yml/badge.svg)](https://github.com/hawkprimarch/frontend-project-lvl2/actions/workflows/node.js.yml) 
+[![Linter and test check](https://github.com/hawkprimarch/frontend-project-lvl2/actions/workflows/node.js.yml/badge.svg)](https://github.com/hawkprimarch/frontend-project-lvl2/actions/workflows/node.js.yml)
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability) 
 [![Test Coverage](https://api.codeclimate.com/v1/badges/31b2b490ed92a50eb640/test_coverage)](https://codeclimate.com/github/hawkprimarch/frontend-project-lvl2/test_coverage)
 
