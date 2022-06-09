@@ -99,7 +99,7 @@ BRF:4
 BRH:2
 end_of_record
 TN:
-SF:src/utilities/index.js
+SF:src/formatters/index.js
 FN:4,(anonymous_0)
 FNF:1
 FNH:1
@@ -120,7 +120,7 @@ BRF:4
 BRH:3
 end_of_record
 TN:
-SF:src/utilities/plain.js
+SF:src/formatters/plain.js
 FN:1,(anonymous_0)
 FN:14,(anonymous_1)
 FN:15,(anonymous_2)
@@ -177,7 +177,7 @@ BRF:13
 BRH:12
 end_of_record
 TN:
-SF:src/utilities/stylish.js
+SF:src/formatters/stylish.js
 FN:1,(anonymous_0)
 FN:17,(anonymous_1)
 FN:26,(anonymous_2)
