@@ -8,15 +8,15 @@
 
 ### How to install:
 
-1. Склонируйте репозиторий проекта локально.
+1. Clone the project repository.
 
-2. Выполните установку зависимостей (make install).
+2. Install dependencies (make install).
 
-3. Запустите сравнение файлов (команды в описании).
+3. Run the file comparison (commands in the description).
 
 ### Description
 
-Вычислить различия можно с помощью команды: `gendiff [options] pathToFile1 pathToFile2`
+You can calculate the differences with the command: `gendiff [options] pathToFile1 pathToFile2`
 
 ### Options: 
 1.  ` -V, --version output the version number `

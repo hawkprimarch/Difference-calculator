@@ -2,7 +2,7 @@ import path from 'path';
 import _ from 'lodash';
 import fs from 'fs';
 import getDiff from './getDiff.js';
-import getFormatter from './utilities/index.js';
+import getFormatter from './formatters/index.js';
 import parse from './parsers.js';
 
 const getPath = (filepath) => {
