@@ -10,7 +10,7 @@ const getFormatter = (formatName) => {
     case 'json':
       return JSON.stringify;
     default:
-      return getStylish;
+      throw new Error(`format "${formatName}" is not supported`);
   }
 };
 
