@@ -25,7 +25,7 @@ You can calculate the differences with the command: `gendiff [options] pathToFil
 
 3. ` -h, --help output usage information `
 
-4. `[type] - plain, json, nested - путь к json или yaml файлам`
+4. `[type] - plain, json, nested - path к json or yaml files`
 
 ### **Example of work.**
 [![asciicast](https://asciinema.org/a/E1ZvpWnYspBT7U8YpsvQjH4JC.svg)](https://asciinema.org/a/E1ZvpWnYspBT7U8YpsvQjH4JC)
